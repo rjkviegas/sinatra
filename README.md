@@ -1,7 +1,7 @@
 # sinatra
 Week 3 Afternoon Pairing Challenge
 
-## Monday 
+## Monday
 Ilja & Ryan
 
 
@@ -23,12 +23,19 @@ $ shotgun app.rb -p 4567
 ```
 The -p switch tells shotgun what port to use. Use this switch to keep the port consistent with the default Sinatra port. By default shotgun will use port 9393.
 
-While this is very convenient for our development process, it might cause problems down the line with the way Sinatra secures session data (you will learn about this in a later challenge). To avoid this pitfall, we should add the line set 
+While this is very convenient for our development process, it might cause problems down the line with the way Sinatra secures session data (you will learn about this in a later challenge). To avoid this pitfall, we should add the line set
 ```
-:session_secret, 'super secret' 
+:session_secret, 'super secret'
 ```
 to our app.rb file.
 
-
-
 http://localhost:4567
+
+''''
+
+Correct way to add CSS elements:
+get '/cat' do
+  "<div style='border: 3px dashed red'>
+      <img src='http://bit.ly/1eze8aE'>
+    </div>"
+end
