@@ -11,6 +11,9 @@ When a server receives a request along with a path, it activates a particular ro
 
 Routes, distinct entry points to an application activate different server actions and so return different responses.
 
+### Browser Link
+
+http://localhost:4567
 
 ### Shotgun
 
@@ -29,13 +32,19 @@ While this is very convenient for our development process, it might cause proble
 ```
 to our app.rb file.
 
-http://localhost:4567
 
-''''
+### HTML & CSS
 
 Correct way to add CSS elements:
+```
 get '/cat' do
   "<div style='border: 3px dashed red'>
       <img src='http://bit.ly/1eze8aE'>
     </div>"
 end
+```
+
+### Views
+Using **views** encourages a clean separation of concerns.
+
+In our case, app.rb will be for routing (or controlling) concerns, and we will use another file for our presentation (or view) concerns.
