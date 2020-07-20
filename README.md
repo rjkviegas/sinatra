@@ -67,3 +67,7 @@ get '/cat' do
   erb :index
 end
 ```
+Although you are used to instance variables being accessible throughout an instance of a class, the @name instance variable is only accessible within the scope of the route in which is was defined. In other words, you cannot visit /cat to set @name, and then visit another route that uses that same @name. The instance variable cannot be accessed by any other routes.
+
+### Params
+Let you extract extra information from a client request.
