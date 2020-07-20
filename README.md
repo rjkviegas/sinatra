@@ -58,3 +58,12 @@ Part of the Ruby Standard Library
 
 The power of ERB comes when you include the following symbols: <%= %> somewhere in a string.
 
+### Assigning instance variables for refactoring
+
+Assign instance variables in app.rb to hide .sample method from CSS:
+```
+get '/cat' do
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb :index
+end
+```
