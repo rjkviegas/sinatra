@@ -71,3 +71,19 @@ Although you are used to instance variables being accessible throughout an insta
 
 ### Params
 Let you extract extra information from a client request.
+
+### POSTed params
+
+Let's look at an incoming request from our server logs:
+
+We can identify several parts of the request:
+host: 
+- the server to which the request was sent
+- timestamp: when the request was received at the server
+- method: a verb that expresses the intention of the request
+- path: the location within the server where the request will be handled
+
+```GET``` methods: a verb that is asking for a server resource.
+```POST``` methods imply that the request is asking to modify a server resource.
+
+POST requests do not store their query parameters in the request string. Instead, they store them in the body of the request as 'Form Data'.
