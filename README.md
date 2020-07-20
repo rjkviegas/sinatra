@@ -45,6 +45,16 @@ end
 ```
 
 ### Views
+
 Using **views** encourages a clean separation of concerns.
 
 In our case, app.rb will be for routing (or controlling) concerns, and we will use another file for our presentation (or view) concerns.
+
+A web application is far more manageable when the routing (or 'controller') and presentation (or 'view') concerns are separated.
+
+### ERB
+
+Part of the Ruby Standard Library
+
+The power of ERB comes when you include the following symbols: <%= %> somewhere in a string.
+
