@@ -87,3 +87,7 @@ host:
 ```POST``` methods imply that the request is asking to modify a server resource.
 
 POST requests do not store their query parameters in the request string. Instead, they store them in the body of the request as 'Form Data'.
+
+### Capybara
+
+Automated browsers are a tool that is able to send/receive messages over HTTP as well as process HTML. They are able to receive instructions programmatically, not just from mouse clicks or keyboard presses.

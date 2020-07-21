@@ -1,25 +1,15 @@
 require 'sinatra'
 
-get '/' do
-  "hello!"
-end
+# set: session_secret, "the secret"
 
-get '/secret' do
-  "CodeWars is Awesome!"
-end
+#get '/' do
+#  "hello!"
+#end
 
-get '/hello' do
-  "hi again"
-end
-
-get '/goodbye' do
-  "bye"
-end
-
-get '/random-cat' do
-  @catname = ["Amigo", "Oscar", "Viking"].sample
-  erb(:index)
-end
+#get '/random-cat' do
+#  @catname = ["Amigo", "Oscar", "Viking"].sample
+#  erb(:index)
+#end
 
 get '/named-cat' do
   p params
@@ -27,14 +17,14 @@ get '/named-cat' do
   erb(:index)
 end
 
-get '/named-dog' do
-    p params
+get '/cat-form' do
+#    p params
     @name = params[:name]
     erb(:dog)
 end
 
-post '/named-dog' do
-  p params
+post '/named-cat' do
+#  p params
   @name = params[:name]
-  erb(:dog)
+  erb(:index)
 end
